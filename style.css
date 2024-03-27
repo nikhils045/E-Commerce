@@ -256,3 +256,36 @@ main {
     filter: drop-shadow(5px 8px 24px rgba(25, 76, 127, 0.2));
   }
 }
+
+/* ================== POLICY SECTION ================= */
+.policy-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: white;
+  margin: 0rem 0.5rem 2rem;
+  padding: 2rem 0.5rem;
+  gap: 2rem;
+  border-radius: 0.5rem;
+}
+
+.div-policy {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  border-right: 0.1rem solid #f7f7f7;
+  padding: 1rem;
+
+  &:last-child {
+    border-right: none;
+  }
+
+  & i {
+    color: #576ef0;
+    font-size: 2rem;
+  }
+
+  & p:last-child {
+    font-size: 0.8rem;
+    font-weight: 300;
+  }
+}
