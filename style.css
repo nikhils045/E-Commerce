@@ -10,19 +10,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-}
-
-body::-webkit-scrollbar {
-  width: 10px;
-}
-
-body::-webkit-scrollbar-track {
-  border-radius: 10px;
-}
-
-body::-webkit-scrollbar-thumb {
-  background: #aeb0da;
-  border-radius: 10px;
+  background-color: #f7f7f7;
 }
 
 .top-content {
@@ -204,4 +192,67 @@ main {
 
 .custom-shape-divider-bottom-1711254807 .shape-fill {
   fill: #ffffff;
+}
+
+/* ================== OFFERS SECTION ================= */
+.offers-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.3rem;
+  margin: 2rem 0.5rem;
+}
+
+.card {
+  background-color: #fefefe;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 1.6rem 1.5rem;
+  border-radius: 0.5rem;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 9rem;
+    height: 9rem;
+    border-radius: 100% 0% 4% 0%;
+    background-color: #e3eaf0;
+    z-index: 1;
+  }
+
+  & p {
+    color: #1f36b9;
+  }
+
+  & h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0.4rem 0 0.9rem;
+  }
+
+  & a {
+    color: #2a2c30;
+    font-size: 1.1rem;
+    border-bottom: 0.1rem solid #4b4f56;
+  }
+
+  &:last-child img {
+    transform: rotate(5deg);
+  }
+}
+
+.card-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+
+  & img {
+    width: 11rem;
+    max-width: 100%;
+    height: auto;
+    filter: drop-shadow(5px 8px 24px rgba(25, 76, 127, 0.2));
+  }
 }
