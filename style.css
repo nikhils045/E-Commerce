@@ -319,7 +319,6 @@ main {
 }
 
 .wcu-left-contents,
-.wcu-center-contents,
 .wcu-right-contents,
 .content {
   display: flex;
@@ -336,9 +335,14 @@ main {
   }
 }
 
-.wcu-center-contents {
+.wcu-center-contents,
+.wcu-image {
+  display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.wcu-image {
   position: relative;
 
   &::before {
@@ -367,12 +371,6 @@ main {
     background-color: transparent;
     border: 0.3rem solid #ebf3fe;
     z-index: -1;
-  }
-
-  & .wcu-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   & img {
