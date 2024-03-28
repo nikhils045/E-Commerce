@@ -5,11 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>E-Commerce</title>
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Animate on Scroll CSS file -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Font-Awesome Icons CSS file -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
   </head>
+
   <body>
     <header>
       <section class="header-top-content">
@@ -27,13 +33,14 @@
           <a href="index.html">NIKSTORE</a>
         </div>
         <div class="menu">
-          <a href="">HOME</a>
-          <a href="">ABOUT</a>
-          <a href="">PRODUCTS</a>
-          <a href="">CONTACT</a>
-          <a href="" class="cart-button">
-            <i class="fa-solid fa-cart-shopping"></i>0</a
-          >
+          <a href="/">HOME</a>
+          <a href="about.html">ABOUT</a>
+          <a href="products.html">PRODUCTS</a>
+          <a href="contact.html">CONTACT</a>
+          <a href="addToCart.html" class="cart-button">
+            <i class="fa-solid fa-cart-shopping"></i>
+            0
+          </a>
         </div>
       </nav>
     </header>
@@ -50,10 +57,10 @@
             discover a world of possibilities!
           </p>
           <button class="hero-btn">
-            <a href="#">Explore Our Products</a>
+            <a href="products.html">Explore Our Products</a>
           </button>
         </div>
-        <figure class="hero-image">
+        <figure class="hero-image" data-aos="fade-up" data-aos-delay="400">
           <img src="public/images/heroSection.svg" alt="heroImage" />
         </figure>
 
@@ -174,7 +181,7 @@
 
       <div class="wcu-all-contents">
         <div class="wcu-left-contents">
-          <div class="content">
+          <div class="content" data-aos="zoom-in-up" data-aos-delay="0">
             <p>1</p>
             <h3>Wide Selection</h3>
             <p>
@@ -184,7 +191,7 @@
             </p>
           </div>
 
-          <div class="content">
+          <div class="content" data-aos="zoom-in-up" data-aos-delay="200">
             <p>2</p>
             <h3>Quality Assurance</h3>
             <p>
@@ -194,7 +201,7 @@
             </p>
           </div>
 
-          <div class="content">
+          <div class="content" data-aos="zoom-in-up" data-aos-delay="300">
             <p>3</p>
             <h3>Competitive Prices</h3>
             <p>
@@ -205,14 +212,14 @@
           </div>
         </div>
 
-        <div class="wcu-center-contents">
+        <div class="wcu-center-contents" data-aos="zoom-in" data-aos-delay="200">
           <figure class="wcu-image">
             <img src="public/images/ecompost.png" alt="" />
           </figure>
         </div>
 
         <div class="wcu-right-contents">
-          <div class="content">
+          <div class="content" data-aos="zoom-in-up" data-aos-delay="0">
             <p>4</p>
             <h3>Expert Guidance</h3>
             <p>
@@ -222,7 +229,7 @@
             </p>
           </div>
 
-          <div class="content">
+          <div class="content" data-aos="zoom-in-up" data-aos-delay="200">
             <p>5</p>
             <h3>Convenient Shopping</h3>
             <p>
@@ -233,7 +240,7 @@
             </p>
           </div>
 
-          <div class="content">
+          <div class="content" data-aos="zoom-in-up" data-aos-delay="300">
             <p>6</p>
             <h3>Excellent Service</h3>
             <p>
@@ -246,6 +253,7 @@
       </div>
     </section>
 
+    <!-- ================== FOOTER SECTION ================= -->
     <footer>
       <div class="footer-top">
         <div class="footer-column1">
@@ -268,7 +276,7 @@
 
         <div class="footer-column3">
           <h3>EXPERIENCE</h3>
-          <a href="./contact.html">Contact Us</a>
+          <a href="contact.html">Contact Us</a>
           <a href="#">Payment Method</a>
           <a href="#">Delivery</a>
           <a href="#">Return and Exchange</a>
@@ -283,5 +291,12 @@
 
       <div class="footer-bottom">Design and Code by Nikhil Raj</div>
     </footer>
+
+    <script type="module" src="main.js"></script>
+    <!-- =================== Animate on Scroll Script file ====================== -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
